@@ -1,3 +1,30 @@
 .header-section{
-    background: $gradient;
+    background-image: $gradient, url(../../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.hero{
+    text-align: center;
+    width: 840px;
+    margin: auto;
+    padding-bottom: 230px;
+}
+
+.hero__title{
+    font-family: $font-title;
+    font-size: 150px;
+    text-transform: uppercase;
+    color:$color-primary-white;
+    margin-top: 0px;
+    margin-bottom: 124px;
+}
+
+.hero__description{
+    font-family: $font-description;
+    font-size: 72px;
+    color:$color-primary-white;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
