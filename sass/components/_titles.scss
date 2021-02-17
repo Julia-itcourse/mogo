@@ -1,0 +1,32 @@
+%titles{
+    margin: 0 auto;
+    text-align: center;
+    color: $color-secondary-text;
+}
+
+.description{
+    @extend %titles;
+    font-family: $font-description;
+    font-size: 24px;
+}
+
+.title{
+    @extend %titles;
+    font-family: $font-title;
+    font-size: 30px;
+    position: relative;
+
+    &::after
+        {
+            right: 50%;
+            transform: translate(50%);
+            top: 72px;
+            content: "";
+            position: absolute;
+            background: $decoration-secondary-color;
+            width: 60px;
+            height: 4px;
+            opacity: 1;
+            
+        }
+}
