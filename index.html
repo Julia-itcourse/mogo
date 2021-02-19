@@ -34,15 +34,16 @@
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">
-                <svg width = "20px" height="20" class = "nav__icon">
-                  <use xlink:href = "./images/sprite.svg#cart-icon"></use>
+                <svg width="20px" height="20" class="nav__icon">
+                  <use xlink:href="./images/sprite.svg#cart-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">  <svg width = "20px" height="20px" class = "nav__icon">
-                <use xlink:href = "./images/sprite.svg#search-icon"></use>
-              </svg></a>
+              <a href="#" class="nav__link">
+                <svg width="20px" height="20px" class="nav__icon">
+                  <use xlink:href="./images/sprite.svg#search-icon"></use></svg
+              ></a>
             </li>
           </ul>
         </nav>
@@ -60,40 +61,64 @@
         <h2 class="title">Amazing services</h2>
         <ul class="services__list">
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-alarm-icon">Photography</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-alarm-icon"
+            >
+              Photography
+            </h3>
             <p class="content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-web-design-icon">Web Design</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-web-design-icon"
+            >
+              Web Design
+            </h3>
             <p class="content">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-computer-icon">Creativity</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-computer-icon"
+            >
+              Creativity
+            </h3>
             <p class="content">
               Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-book-icon">seo</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-book-icon"
+            >
+              seo
+            </h3>
             <p class="content">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
             </p>
           </li>
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-home-icon">css/html</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-home-icon"
+            >
+              css/html
+            </h3>
             <p class="content">
               Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
             </p>
           </li>
           <li class="services__item">
-            <h3 class="item-title services__item-title services__item-title--with-digital-icon">digital</h3>
+            <h3
+              class="item-title services__item-title services__item-title--with-digital-icon"
+            >
+              digital
+            </h3>
             <p class="content">
               Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>
@@ -114,208 +139,233 @@
         <div class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <div class = "gallery__wrapper">
-              <img
-                class="gallery__image-mdix"
-                src="./images/mdix.png"
-                srcset="./images/mdix@2x.png 2x"
-                alt="Photo of Matthew Dix"
-              />
-            </div>
+               <div class="image-wrapper">
+              <div class="gallery__wrapper">
+                <img
+                  class="gallery__image-mdix"
+                  src="./images/mdix.png"
+                  srcset="./images/mdix@2x.png 2x"
+                  alt="Photo of Matthew Dix"
+                />
+                <div class = "gallery__overlay">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to facebook account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Twitter account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Pinterest account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Instagram account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+              
               <h3 class="item-title">Matthew Dix</h3>
               <p class="gallery__content">Graphic Design</p>
-              <ul class="social">
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to facebook account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Twitter account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Pinterest account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Instagram account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+     
             </li>
 
             <li class="gallery__item">
-              <div class = "gallery__wrapper">
-              <img
-                class="gallery__image-ccampbell"
-                src="./images/ccampbell.png"
-                srcset="./images/ccampbell@2x.png 2x"
-                alt="Photo of Christopher Campbell"
-            
-              />
-              <div class = "gallery__overlay">
-                <ul class="social">
-                  <li class="social__item">
-                    <a
-                      href=""
-                      aria-label="Link to facebook account"
-                      class="social__link"
-                    >
-                      <svg class="social__icon">
-                        <use xlink:href="./images/sprite.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      href=""
-                      aria-label="Link to Twitter account"
-                      class="social__link"
-                    >
-                      <svg class="social__icon">
-                        <use xlink:href="./images/sprite.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      href=""
-                      aria-label="Link to Pinterest account"
-                      class="social__link"
-                    >
-                      <svg class="social__icon">
-                        <use xlink:href="./images/sprite.svg#pinterest"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      href=""
-                      aria-label="Link to Instagram account"
-                      class="social__link"
-                    >
-                      <svg class="social__icon">
-                        <use xlink:href="./images/sprite.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="image-wrapper">
+                <div class="gallery__wrapper">
+                  <img
+                    class="gallery__image-ccampbell"
+                    src="./images/ccampbell.png"
+                    srcset="./images/ccampbell@2x.png 2x"
+                    alt="Photo of Christopher Campbell"
+                  />
+                  <div class="gallery__overlay">
+                    <ul class="social">
+                      <li class="social__item">
+                        <a
+                          href=""
+                          aria-label="Link to facebook account"
+                          class="social__link"
+                        >
+                          <svg class="social__icon">
+                            <use
+                              xlink:href="./images/sprite.svg#facebook"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          href=""
+                          aria-label="Link to Twitter account"
+                          class="social__link"
+                        >
+                          <svg class="social__icon">
+                            <use xlink:href="./images/sprite.svg#twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          href=""
+                          aria-label="Link to Pinterest account"
+                          class="social__link"
+                        >
+                          <svg class="social__icon">
+                            <use
+                              xlink:href="./images/sprite.svg#pinterest"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item">
+                        <a
+                          href=""
+                          aria-label="Link to Instagram account"
+                          class="social__link"
+                        >
+                          <svg class="social__icon">
+                            <use
+                              xlink:href="./images/sprite.svg#instagram"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
+              </div>
               <h3 class="item-title">Christopher Campbell</h3>
               <p class="gallery__content">Branding/UX design</p>
-              
             </li>
 
             <li class="gallery__item">
-              <div class = "gallery__wrapper">
-              <img
-                class="gallery__image-mfertig"
-                src="./images/mfertig.png"
-                srcset="./images/mfertig@2x.png 2x"
-                alt="Photo of Michael Fertig"
-           
-              />
+              <div class="image-wrapper">
+              <div class="gallery__wrapper">
+                <img
+                  class="gallery__image-mfertig"
+                  src="./images/mfertig.png"
+                  srcset="./images/mfertig@2x.png 2x"
+                  alt="Photo of Michael Fertig"
+                />
+                <div class="gallery__overlay">
+                  <ul class="social">
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to facebook account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Twitter account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Pinterest account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a
+                        href=""
+                        aria-label="Link to Instagram account"
+                        class="social__link"
+                      >
+                        <svg class="social__icon">
+                          <use xlink:href="./images/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
               <h3 class="item-title">Michael Fertig</h3>
               <p class="gallery__content">Developer</p>
-              <ul class="social">
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to facebook account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Twitter account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Pinterest account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a
-                    href=""
-                    aria-label="Link to Instagram account"
-                    class="social__link"
-                  >
-                    <svg class="social__icon">
-                      <use xlink:href="./images/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <footer >
-      <div class = "container footer">
-      <p class="copyright">
-        &#169; 2016 MoGo free PSD template by
-        <a
-          href="#"
-          aria-label="Link to author's website"
-          class="copyright__link"
-          >Laaqiq</a
+    <footer>
+      <div class="container footer">
+        <p class="copyright">
+          &#169; 2016 MoGo free PSD template by
+          <a
+            href="#"
+            aria-label="Link to author's website"
+            class="copyright__link"
+            >Laaqiq</a
+          >
+        </p>
+        <form
+          class="subscribe-form"
+          name="subscribe-form"
+          autocomplete="on"
+          novalidate
         >
-      </p>
-      <form class="subscribe-form" name="subscribe-form" autocomplete="on" novalidate>
-     
-          <input class = "subscribe-form__input" type="email" name="email" placeholder="Your Email..."/>
+          <input
+            class="subscribe-form__input"
+            type="email"
+            name="email"
+            placeholder="Your Email..."
+          />
 
-
-        <button type="submit" class = "secondary-button">Subscribe</button>
-      </form></div>
+          <button type="submit" class="secondary-button">Subscribe</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
