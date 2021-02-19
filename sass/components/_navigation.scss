@@ -31,6 +31,7 @@
     &:hover,
     &:focus {
       color: $accent-color;
+      outline: none;
     }
 
     &--active {
