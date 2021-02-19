@@ -1,3 +1,8 @@
+
+.container.team__container{
+padding-bottom: 80px;
+
+}
 .team__description {
     width: 955px;
   margin-top: 90px;
@@ -10,7 +15,7 @@
 
 .gallery {
   margin-top: 94px;
-  margin-bottom: 80px;
+
 
 }
 
@@ -80,6 +85,7 @@
 }
 .gallery__wrapper{
 
+    position: relative;
     overflow: hidden;
     height: 470px;
     transition: $transition;

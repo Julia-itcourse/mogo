@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 0 0;
-    margin-bottom: 150px;
+    padding-top: 16px;
+
 
 
 &__list{
@@ -22,6 +22,8 @@
 
 &__link{
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: $color-primary-white;
     &:hover, &:focus{
 color: $accent-color;
@@ -40,7 +42,7 @@ color: $accent-color;
             height: 4px;
      
             opacity: 1;
-            top: 30px;
+            bottom: 0px;
         }
 
     
