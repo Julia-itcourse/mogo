@@ -1,11 +1,12 @@
-.logo{
-    font-family: $font-title;
-    font-size: 30px;
-    font-weight: 700;
-    color:$color-primary-white;
-    transition: $transition;
+.logo {
+  font-family: $font-title;
+  font-size: 30px;
+  font-weight: 700;
+  color: $color-primary-white;
+  transition: $transition;
 
-    &:hover, &:focus{
-        color:$accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

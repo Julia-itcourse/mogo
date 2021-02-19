@@ -1,31 +1,30 @@
-.header-section{
-    background-image: $gradient, url(../../images/hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
+.header-section {
+  background-image: $gradient, url(../../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.hero{
-    text-align: center;
-    width: 840px;
-    margin: auto;
-    padding-top: 168px;
-    padding-bottom: 230px;
-}
+.hero {
+  text-align: center;
+  width: 840px;
+  margin: auto;
+  padding-top: 168px;
+  padding-bottom: 230px;
 
-.hero__title{
+  &__title {
     font-family: $font-title;
     font-size: 150px;
     text-transform: uppercase;
-    color:$color-primary-white;
+    color: $color-primary-white;
     margin-top: 0px;
     margin-bottom: 124px;
-}
+  }
 
-.hero__description{
+  &__description {
     font-family: $font-description;
     font-size: 72px;
-    color:$color-primary-white;
+    color: $color-primary-white;
     margin-top: 0px;
     margin-bottom: 60px;
+  }
 }

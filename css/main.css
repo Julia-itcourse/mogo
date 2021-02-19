@@ -425,15 +425,15 @@ a {
 
 .primary-button, .secondary-button {
   min-width: 160px;
-  border: 3px solid  transparent;
   padding: 10px 30px;
-  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.8;
   text-align: center;
   text-transform: uppercase;
+  border: 3px solid transparent;
+  color: #ffffff;
   -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
@@ -510,7 +510,7 @@ a {
 
 .nav__link--active::after {
   right: 0px;
-  content: "";
+  content: '';
   position: absolute;
   background: #fce38a;
   width: 100%;
@@ -552,9 +552,9 @@ a {
 }
 
 .title {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  position: relative;
   text-transform: uppercase;
 }
 
@@ -563,7 +563,7 @@ a {
   -webkit-transform: translate(50%);
           transform: translate(50%);
   top: 72px;
-  content: "";
+  content: '';
   position: absolute;
   background: #f38181;
   width: 60px;
@@ -624,7 +624,7 @@ a {
 .services__item-title::before {
   position: absolute;
   display: block;
-  content: "";
+  content: '';
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
@@ -697,6 +697,42 @@ a {
   margin-right: 0px;
 }
 
+.gallery__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.8)), to(rgba(243, 129, 129, 0.8)));
+  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%);
+  opacity: 0;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__content {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.gallery__wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 470px;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,14 +785,6 @@ a {
   text-align: center;
 }
 
-.gallery__wrapper {
-  position: relative;
-  overflow: hidden;
-  height: 470px;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .gallery__item:hover .gallery__overlay {
   opacity: 1;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -770,12 +798,6 @@ a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   height: 470px;
-}
-
-.gallery__content {
-  margin: 0;
-  font-style: italic;
-  text-align: center;
 }
 
 .image-wrapper {
@@ -800,28 +822,6 @@ a {
   margin: -30px 0 0 -140px;
 }
 
-.gallery__overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.8)), to(rgba(243, 129, 129, 0.8)));
-  background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%);
-  opacity: 0;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .footer {
   border-top: 2px solid #ececec;
   padding: 15px 0 15px 0;
@@ -837,10 +837,10 @@ a {
 }
 
 .copyright {
+  margin: 0;
   color: #333333;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
-  margin: 0;
 }
 
 .copyright__link {
@@ -858,10 +858,10 @@ a {
   width: 230px;
   padding: 13px;
   border: 3px solid #e7e7e7;
+  outline: none;
   background-color: inherit;
   color: #e7e7e7;
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,42 +1,40 @@
-%titles{
-    margin: 0 auto;
-    text-align: center;
-    color: $color-secondary-text;
+%titles {
+  margin: 0 auto;
+  text-align: center;
+  color: $color-secondary-text;
 }
 
-.description{
-    @extend %titles;
-    font-family: $font-description;
-    font-size: 24px;
+.description {
+  @extend %titles;
+  font-family: $font-description;
+  font-size: 24px;
 }
 
-.title{
-    @extend %titles;
-    font-family: $font-title;
-    font-size: 30px;
-    position: relative;
-    text-transform: uppercase;
+.title {
+  @extend %titles;
+  position: relative;
 
-    &::after
-        {
-            right: 50%;
-            transform: translate(50%);
-            top: 72px;
-            content: "";
-            position: absolute;
-            background: $decoration-secondary-color;
-            width: 60px;
-            height: 4px;
-            opacity: 1;
-            
-        }
+  font-family: $font-title;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  &::after {
+    right: 50%;
+    transform: translate(50%);
+    top: 72px;
+    content: '';
+    position: absolute;
+    background: $decoration-secondary-color;
+    width: 60px;
+    height: 4px;
+    opacity: 1;
+  }
 }
 
-.item-title{
-    margin: 0px;
-    font-family: $font-title;
-    font-size: 14px;
-    color:$color-secondary-text;
-    text-transform: uppercase;
-
+.item-title {
+  margin: 0px;
+  font-family: $font-title;
+  font-size: 14px;
+  color: $color-secondary-text;
+  text-transform: uppercase;
 }

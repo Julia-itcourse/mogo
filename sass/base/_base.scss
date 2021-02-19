@@ -1,31 +1,30 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-    background-color: $color-primary-white;
-    color: $color-primary-text;
-    font-family: $font-primary-text;
-  }
-  
-  img {
-    display: block;
-    // max-width: 100%;
-    height: auto;
-  }
-  
-  p {
-    font-size: 15px;
-    line-height: 1.6;
-  }
+  box-sizing: border-box;
+}
 
-  a{
-    text-decoration: none;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $color-primary-white;
+  color: $color-primary-text;
+  font-family: $font-primary-text;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}

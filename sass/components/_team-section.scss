@@ -1,149 +1,37 @@
-
-.container.team__container{
-padding-bottom: 80px;
-
+.container.team__container {
+  padding-bottom: 80px;
 }
 .team__description {
-    width: 955px;
+  width: 955px;
   margin-top: 90px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
- text-align: center;
-  
+  text-align: center;
 }
 
 .gallery {
   margin-top: 94px;
 
-
-}
-
-.gallery__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    
-}
+  }
 
-.gallery__item{
-   
+  &__item {
     margin-right: 20px;
     width: calc((100% - 30px * 2) / 3);
     transition: $transition;
-   
+
+    &:last-child {
+      margin-right: 0px;
     }
-
-
-.gallery__item:last-child{
-    margin-right: 0px;
-}
-.social{
- 
-    display: flex;
-    list-style-type: none;
-    margin:0;
-    padding: 0;
- 
-}
-.social__link{
-    
-    display: flex;
-    width: 50px;
-    height: 50px;
-    background-color: $accent-color;
-    transition: $transition;
-    align-items: center;
-    justify-content: center;
-
-    &:not(last-child){
-        margin-right: 2px;
-    }
-
-    &:hover{
-        background-color: $decoration-secondary-color;
-    }
-
-    &:hover .social__icon{
-            fill: $color-primary-white;
-    }
-}
-.social__icon{
-    width: 30px;
-    height: 30px;
-    fill: $decoration-secondary-color;
-    transition: $transition;
-
-}
-
-.gallery__item > .item-title{
-    margin-top: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-.gallery__wrapper{
-
-    position: relative;
-    overflow: hidden;
-    height: 470px;
-    transition: $transition;
-    
-}
-
-.gallery__item:hover .gallery__overlay{
-    opacity: 1;
-    transition: $transition;
-}
-
-.gallery__item:hover .gallery__wrapper{
-   
-    transform: translate(-10px, -10px);
-    transition: $transition;
-    overflow: hidden;
-    height: 470px;
-    
-    
-}
-
-
-.gallery__content{
-    margin: 0;
-    font-style: italic;
-    text-align: center;
-}
-
-.image-wrapper{
-    background-color: $decoration-primary-color;
-}
-
-
-
-
-.gallery__image-ccampbell {
-   
-    width: auto;
-    height: 130%;
-    margin: -130px 0 0 -130px;
   }
 
-  .gallery__image-mfertig{
-   
-    width: auto;
-    height: 120%;
-    margin: -0px 0 0 -200px;
-  }
-
-  .gallery__image-mdix{
-   
-    width: auto;
-    height: 110%;
-    margin: -30px 0 0 -140px;
-  }
-
-
-  .gallery__overlay{
+  &__overlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,10 +42,94 @@ padding-bottom: 80px;
     top: 0;
     background-image: $gradient;
     opacity: 0;
-   
-    
+
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  &__content {
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+  }
 
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 470px;
+    transition: $transition;
+  }
+}
+.social {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
+  &__link {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: $accent-color;
+    transition: $transition;
+    align-items: center;
+    justify-content: center;
+
+    &:not(last-child) {
+      margin-right: 2px;
+    }
+
+    &:hover {
+      background-color: $decoration-secondary-color;
+    }
+
+    &:hover .social__icon {
+      fill: $color-primary-white;
+    }
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $decoration-secondary-color;
+    transition: $transition;
+  }
+}
+
+.gallery__item > .item-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+  transition: $transition;
+}
+
+.gallery__item:hover .gallery__wrapper {
+  transform: translate(-10px, -10px);
+  transition: $transition;
+  overflow: hidden;
+  height: 470px;
+}
+
+.image-wrapper {
+  background-color: $decoration-primary-color;
+}
+
+.gallery__image-ccampbell {
+  width: auto;
+  height: 130%;
+  margin: -130px 0 0 -130px;
+}
+
+.gallery__image-mfertig {
+  width: auto;
+  height: 120%;
+  margin: -0px 0 0 -200px;
+}
+
+.gallery__image-mdix {
+  width: auto;
+  height: 110%;
+  margin: -30px 0 0 -140px;
+}
