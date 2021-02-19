@@ -46,5 +46,17 @@ color: $accent-color;
     
 }
 
+&__icon{
+    fill: $color-primary-white;
+   
+   
 }
 
+}
+
+
+
+.nav .nav__link:hover .nav__icon {
+    fill:    $accent-color;
+    
+  }

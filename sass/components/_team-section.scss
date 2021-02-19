@@ -24,8 +24,10 @@
 }
 
 .gallery__item{
+   
     margin-right: 20px;
     width: calc((100% - 30px * 2) / 3);
+    transition: $transition;
    
     }
 
@@ -34,24 +36,33 @@
     margin-right: 0px;
 }
 .social{
+ 
     display: flex;
     list-style-type: none;
     margin:0;
     padding: 0;
  
 }
-.social__item{
+.social__link{
+    
+    display: flex;
     width: 50px;
     height: 50px;
     background-color: $accent-color;
     transition: $transition;
-    
+    align-items: center;
+    justify-content: center;
+
     &:not(last-child){
         margin-right: 2px;
     }
 
     &:hover{
         background-color: $decoration-secondary-color;
+    }
+
+    &:hover .social__icon{
+            fill: $color-primary-white;
     }
 }
 .social__icon{
@@ -60,15 +71,16 @@
     fill: $decoration-secondary-color;
     transition: $transition;
 
-    &:hover{
-        fill: $color-primary-white;
-    }
 }
 
 .gallery__item > .item-title{
     margin-top: 30px;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.gallery__item:hover .gallery__overlay{
+    opacity: 1;
 }
 
 .gallery__content{
@@ -78,25 +90,47 @@
 }
 
 .gallery__wrapper{
+    position: relative;
     overflow: hidden;
     height: 470px;
+    background-color: $decoration-primary-color;
     
 }
 
 .gallery__image-ccampbell {
+   
     width: auto;
     height: 130%;
     margin: -130px 0 0 -130px;
   }
 
   .gallery__image-mfertig{
+   
     width: auto;
     height: 120%;
     margin: -0px 0 0 -200px;
   }
 
   .gallery__image-mdix{
+   
     width: auto;
     height: 110%;
     margin: -30px 0 0 -140px;
+  }
+
+
+  .gallery__overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: $gradient;
+    opacity: 0;
+   
+    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
